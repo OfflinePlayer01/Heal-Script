@@ -1,15 +1,9 @@
 		    game:GetService("StarterGui"):SetCore("SendNotification", { 
         Title = "〰 Script By _offlineplayer_ 〰";
-        Text = "〰 Enjoy :) 〰";
+        Text = "〰 Press V And See 〰";
         Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
     Duration = 3;
-
-		    game:GetService("StarterGui"):SetCore("SendNotification", { 
-        Title = "〰 How To Use! 〰";
-        Text = "〰 Press "V" And See :) 〰";
-        Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
-    Duration = 3;
-
+    
 local function killCharacter()
     local player = game.Players.LocalPlayer
     local character = player.Character
@@ -26,7 +20,7 @@ local function killCharacter()
 end
 
 game:GetService("UserInputService").InputBegan:Connect(function(input)
-    if input.KeyCode == Enum.KeyCode.v then
+    if input.KeyCode == Enum.KeyCode.V then
         killCharacter()
     end
 end)
